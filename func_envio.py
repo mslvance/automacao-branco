@@ -1,7 +1,7 @@
 import requests
 
 TOKEN = '7275443105:AAFLlQtY52_qxtvZCIA6B13lh3SLZXy8JSs'
-CHAT_ID = '-2207574453'
+CHAT_ID = '-1002218242726'
 URL = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
 def enviar_para_telegram(horarios):
