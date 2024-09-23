@@ -27,8 +27,10 @@ class BlazeAPI(object):
 
         print("print hora: ", hora)
         print("print hora com fuso horário: ", formatted_time)
+        
+        # Nova API = https://blaze.com/api/singleplayer-originals/originals/roulette_games/recent/1
 
-        response = self.session.get(f"{URL_API}/api/roulette_games/recent")
+        response = self.session.get(f"{URL_API}/api/singleplayer-originals/originals/roulette_games/recent/1")
         if response.status_code == 200:
             doubles = response.json()
             last_doubles = []
